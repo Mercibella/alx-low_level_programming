@@ -10,7 +10,7 @@ for (num = 0; num <= 9; num++)
 {
 putchar((num % 10) + '0');
 /**
-* main - prints combination of single-digit number.
+* main - prints combination of single-digit numbers to 9.
 * Return: Always 0.
 */
 if (num == 9)
