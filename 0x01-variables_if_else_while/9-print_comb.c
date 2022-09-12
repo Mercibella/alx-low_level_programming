@@ -12,8 +12,8 @@ for (num = 0; num <= 9; num++)
 {
 putchar((num % 10) + '0');
 /**
-* main - prints combination of single-digit numbers to 9.
-* Return: Always 0.
+* Description: Prints combination of single-digit numbers to 9.
+* Return: Always (Succes)
 */
 if (num == 9)
 continue;
