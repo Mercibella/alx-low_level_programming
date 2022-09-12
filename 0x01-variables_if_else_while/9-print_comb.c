@@ -3,7 +3,7 @@
 * main - Entry point
 *
 * Description: "Prints all combinations of single-digit numbers"
-* Return: Always 0.
+* Return: Always 0 (success)
 */
 int main(void)
 {
