@@ -1,11 +1,9 @@
-#include "main.h"
+#include "main.h">
 
 /**
-* main - Entry point
-*Description: strlen - returns the lenght of string
-*
-*  @s: string to find length
-*  Return: length of string
+* _strlen - returns the lenght of string
+* @s: string to find length
+* Return: length of string
 */
 int _strlen(char *s)
 {
