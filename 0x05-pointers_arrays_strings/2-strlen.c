@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
-* strlen - returns the lenght of string
+* main - Entry point
+*Description: strlen - returns the lenght of string
+*
 *  @s: string to find length
 *  Return: length of string
 */
@@ -11,5 +13,6 @@ int _strlen(char *s)
 
 	while (*(s + m))
 		m++;
+
 	return (m);
 }
