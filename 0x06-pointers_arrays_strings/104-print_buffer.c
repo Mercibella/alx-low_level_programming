@@ -6,16 +6,16 @@
 * @n: integer
 * Return: 1 if true, 0 if false
 */
+
 int isPrintableASCII(int n)
 {
 	return (n >= 32 && n <= 126);
 }
 
 /**
-* printHexes - print hex values for string b in formatted form 
+* printHexes - print hex values for string b in formatted form
 * @b: string to print
 * @start: starting position
-* @end: ending position
 */
 
 void printHexes(char *b, int start, int end)
@@ -37,7 +37,7 @@ void printHexes(char *b, int start, int end)
 /**
 * printASCII - print ascii values for string b,
 * formatted to replace nonprintable chars with '.'
-* @b: string to print
+* @b: string to prin
 * @start: starting position
 * @end: ending position
 */
@@ -59,7 +59,7 @@ void printASCII(char *b, int start, int end)
 /**
 * print_buffer - prints a buffer
 * @b: string
-* @size: size of buffer 
+* @size: size of buffer
 */
 
 void print_buffer(char *b, int size)
@@ -77,7 +77,8 @@ void print_buffer(char *b, int size)
 			printf("\n");
 		}
 	}
-	 
+
 	else
-		 printf("\n");
+
+		printf("\n");
 }
