@@ -1,27 +1,28 @@
-lude "main.h"
+#include "main.h"
 
 /**
-* rot13 - encodes a string in rot13
-* @s: string to be encoded
-* Return: the resulting string
+* rot13 - encrypts code
+* @s: string to encrypt
+* Return: char value
 */
 char *rot13(char *s)
 {
-	int i, j;
-	char a[] = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-	char b[] = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	int i;
+	int j = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; a[j] != '\0'; j++)
+		for (j = 0; part1[j] != '\0'; j++)
 		{
-			if (s[i] == a[j])
+			if (s[i] == part1[j])
 			{
-				s[i] = b[j];
+				s[i] = part2[j];
 				break;
 			}
 		}
 	}
-
-return (s);
+	return (s);
 }
