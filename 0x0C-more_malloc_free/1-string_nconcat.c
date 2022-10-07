@@ -9,33 +9,22 @@
 * Return: returns a pointer to a new string which contains
 * s1 followed by the first n bytes of s2, and a=the null-terminator
 */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i, j;
-	unsigned int c1 = 0, c2 = 0, c = 0;
-	char *str;
+	unsigned int i, c;
+	char *ptr;
 
-	if (s1 != NULL)
-		for (i = 0; s1[i] != '\0'; i++)
-			c1++;
-
-	if (s2 != NULL)
-		for (i = 0; s2[i] != '\0'; i++)
-			if (i < n)
-				c2++;
-
-	c = c1 + c2 + 1;
-
-	str = malloc(c);
-	if (str == NULL)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	for (i = 0; i < c1; i++)
-		str[i] = s1[i];
+	c = nmemb * size;
 
-	for (j = 0 ; j < c2; i++, j++)
-		str[i] = s2[j];
-	str[i] = '\0'
+	ptr = malloc(c);
+	if (ptr == NULL)
+		return (NULL);
 
-		return (str);
+	for (i = 0; i < c; i++)
+		ptr[i] = 0;
+
+	return ((void *) ptr);
 }
