@@ -8,6 +8,8 @@
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
+	int bit;
+
 	if (index > 64)
 	/* arquitectura de 64 bit, si el index es mayor es un error*/
 	{
