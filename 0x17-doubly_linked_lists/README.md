@@ -1,1 +1,1 @@
-0x17 - Doubly_linked lists
+0x17. C - Doubly linked lists
